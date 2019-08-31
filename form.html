@@ -7,15 +7,16 @@
 	</head>
 	<body>
 		<div class="wrapper" id="formlogin">
-			<div id="fill">	
-				<div id="inputs">
-					<form name="login" autocomplete="on">
-						<input type="text" placeholder="login or e-mail"><br>
-						<input type="password" placeholder="password"><br>
-						<input type="submit" value="Login"><br>
+			<div id="divform">
+				<span id="text_login">Log In</span>
+				<div id="divinputs">
+					<form name="login" id="form" autocomplete="on">
+						<p><input type="text" class="input" required="required" placeholder="E-mail"></p>
+						<p><input type="password" class="input" required="required" placeholder="Password"></p>
+						<div class="input" id="wrong">E-mail or password is Incorrect</div><br>
+						<input type="submit" class="button" value="Login"><br>
 					</form>
 				</div>
-					<span id="wrong">E-mail or password is Incorrect</span>
 			</div>
 		</div>
 		<div class="wrapper" id="loggedin">
@@ -24,7 +25,7 @@
 				<img src="" id="user_image" />
 				</div>
 				<span id="user_name"></span>
-				<input type="submit" value="Logout">
+				<input type="submit" class="button" value="Logout">
 			</div>
 		</div>
 
