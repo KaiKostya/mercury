@@ -3,17 +3,20 @@ body {
 }
 .wrapper{
 	background: white;
-	display: block;
 	margin-left: 30%;
 	margin-top: 10%;
 	width: 35%;
 	height: 52%;
 	border-radius: 2%;
+	min-width: 30%;
+	min-height: 30%;
+}
+#formlogin{
+	display: block;
 }
 #loggedin{
 	display: none;
-	margin-left: 45%;
-	margin-top: 25%;
+	
 	
 }
 
@@ -21,8 +24,9 @@ body {
 	font-family: sans-serif;
 	font-size: 28px;
 	font-weight: 800;
-	margin-left: 40%;
 	padding-top: 10%;
+	width: 100%;
+	text-align: center;
 }
 .input{
 	text-indent: 3%;
@@ -33,9 +37,12 @@ body {
 	margin-left: 5%;
 	margin-top: 3%;
 	font-size: 18px;
-	border-radius: 5%;
+	border-radius: 4px;
 	width: 85%;
 	height: 13%;
+}
+#input_field{
+	color: black;
 }
 #wrong{
 	display: none;
@@ -44,13 +51,54 @@ body {
 	border-radius: 2%;
 }
 .button{
-	margin-left: 35%;
-	border-radius: 15%;
-	font-size: 24px;
+	border-radius: 35em;
+	font-size: 1em;
 	background: #ed4159;
 	color: white;
 	font-family: serif;
 	padding: 2%;
 	width: 30%;
-	height: 17%;
+}
+#button_logout_div{
+	width: 100%;
+	height: 15%;
+	position:relative;
+	top: 37%;
+}
+#button_logout{
+	border-radius: 35em;
+	font-size: 1.4em;
+	background: #ed4159;
+	color: white;
+	font-family: serif;
+	padding: 2%;
+	position:relative;
+	left: 35%;
+	width: 30%;
+}
+#user_name{
+	width: 100%;
+	font-size: 1.9em;
+	font-weight: bold;
+	font-family: serif;
+	text-align: center;
+	position: relative;
+	top: 15%;
+	
+}
+#block_ava_username_button{
+	width: 100%;
+	height: 100%;
+}
+#ava{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 10%;
+}
+#button_login{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 10%;
 }

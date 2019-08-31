@@ -6,26 +6,32 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<script>
+		   function clear_input () {
+			document.getElementById("input_field").value = "";
+			document.getElementById("input_field").style.color="red";
+		   }
+		</script>
 		<div class="wrapper" id="formlogin">
 			<div id="divform">
-				<span id="text_login">Log In</span>
+				<div id="text_login">Log In</div>
 				<div id="divinputs">
 					<form name="login" id="form" autocomplete="on">
-						<p><input type="text" class="input" required="required" placeholder="E-mail"></p>
-						<p><input type="password" class="input" required="required" placeholder="Password"></p>
+						<p><input type="text" class="input" id="input_field" required="required" placeholder="E-mail" /></p>
+						<p><input type="password" class="input" id="input_password" required="required" placeholder="Password" /></p>
 						<div class="input" id="wrong">E-mail or password is Incorrect</div><br>
-						<input type="submit" class="button" value="Login"><br>
+						<div id="button_login"><input type="submit" class="button" value="Login" onclick="alert("");" /></div><br>
 					</form>
 				</div>
 			</div>
 		</div>
 		<div class="wrapper" id="loggedin">
-			<div id="container">
-				<div id="avatar">
-				<img src="" id="user_image" />
+			<div id="block_ava_username_button">
+				<div id="ava">
+					<img src="images/alina.jpg" id="user_image" />
 				</div>
-				<span id="user_name"></span>
-				<input type="submit" class="button" value="Logout">
+				<div id="user_name">Alena</div>
+				<div id="button_logout_div"><input type="submit" value="Logout" id="button_logout" onclick="logout()"></div
 			</div>
 		</div>
 
