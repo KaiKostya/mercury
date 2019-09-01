@@ -10,14 +10,17 @@ body {
 	border-radius: 2%;
 	min-width: 30%;
 	min-height: 30%;
+	max-height: 60%;
 }
-#formlogin{
-	display: block;
-}
-#loggedin{
-	display: none;
-	
-	
+.wrapper2{
+	background: white;
+	margin-left: 30%;
+	margin-top: 10%;
+	width: 35%;
+	height: 52%;
+	border-radius: 2%;
+	min-width: 30%;
+	min-height: 30%;
 }
 
 #text_login{
@@ -45,7 +48,6 @@ body {
 	color: black;
 }
 #wrong{
-	display: none;
 	background: pink;
 	color: red;
 	border-radius: 2%;

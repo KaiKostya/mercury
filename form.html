@@ -6,32 +6,26 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<script>
-		   function clear_input () {
-			document.getElementById("input_field").value = "";
-			document.getElementById("input_field").style.color="red";
-		   }
-		</script>
-		<div class="wrapper" id="formlogin">
+		<div id="formlogin" style="display: block;" class="wrapper">
 			<div id="divform">
 				<div id="text_login">Log In</div>
 				<div id="divinputs">
 					<form name="login" id="form" autocomplete="on">
-						<p><input type="text" class="input" id="input_field" required="required" placeholder="E-mail" /></p>
+						<p><input type="text" class="input" id="input_field" required="required" placeholder="E-mail" onclick="clear_input ();" /></p>
 						<p><input type="password" class="input" id="input_password" required="required" placeholder="Password" /></p>
-						<div class="input" id="wrong">E-mail or password is Incorrect</div><br>
-						<div id="button_login"><input type="submit" class="button" value="Login" onclick="alert("");" /></div><br>
+						<div id="wrong" style="display: none;" class="input">E-mail or password is Incorrect</div><br>
+						<div id="button_login"><input type="submit" id="button" class="button" value="Login" onclick="auth (event);" /></div><br>
 					</form>
 				</div>
 			</div>
 		</div>
-		<div class="wrapper" id="loggedin">
+		<div class="wrapper2" id="loggedin" style="display: none">
 			<div id="block_ava_username_button">
 				<div id="ava">
 					<img src="images/alina.jpg" id="user_image" />
 				</div>
 				<div id="user_name">Alena</div>
-				<div id="button_logout_div"><input type="submit" value="Logout" id="button_logout" onclick="logout()"></div
+				<div id="button_logout_div"><input type="submit" value="Logout" id="button_logout" onclick="logout(event);" /></div
 			</div>
 		</div>
 
